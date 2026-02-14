@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message with Doctor</title>
+  <link rel="stylesheet" href="styles/message.css">
+</head>
+<body onload="checkLoginStatus(); loadMessages();">
+  <header>
+    <button class="back-btn" id="backBtn" onclick="handleBack(event)">Back</button>
+
+    Get Health Support Anonymously
+  </header>
+
+  <div class="chat-container">
+    <div class="messages" id="messagesContainer"></div>
+    <div class="input-container">
+      <input type="text" id="messageInput" placeholder="Type your message..." />
+      <button id="sendBtn" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="script/session.js"></script>
+  <script src="script/message.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+}
+.hero-section {
+  position: relative;
+  background: linear-gradient(to right, #2563eb, #1e40af); /* beautiful blue gradient */
+  color: white;
+  text-align: center;
+  padding: 12rem 2rem 8rem; 
+  overflow: hidden; 
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  /*box-shadow: 0 4px 15px rgba(0,0,0,0.1);*/
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fadeSlideIn 1.2s ease forwards;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  line-height: 1.6;
+  opacity: 0;
+  animation: fadeSlideIn 1.2s ease forwards;
+  animation-delay: 0.8s;
+}
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatShape {
+  from { transform: translateY(0); }
+  to { transform: translateY(30px); }
+}
+.hero-content * {
+  position: relative;
+  z-index: 1;
+}
+
+form#appointment-form {
+  max-width: 700px;
+  background: #fff;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+form#appointment-form h2 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 25px;
+}
+
+#patient-details {
+  background-color: #f0f4ff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+#patient-details h3 {
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+#patient-details p {
+  margin: 5px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.filter-section {
+  margin-bottom: 25px;
+}
+
+.filter-section label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.filter-section select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.filter-section select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Doctor List */
+#doctor-list {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+}
+
+#doctor-list h3 {
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+#doctor-list .note {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.doctor-option {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.doctor-option:hover {
+  background-color: #f0f7ff;
+  border-color: #2563eb;
+}
+
+.doctor-option input[type="radio"] {
+  accent-color: #2563eb;
+  margin-right: 10px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #1e3a8a;
+  font-size: 15px;
+}
+
+.form-group input[type="time"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #f9fafb;
+  color: #1f2937;
+  transition: all 0.3s ease;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-group input[type="time"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  background-color: #fff;
+}
+
+.book-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.book-btn:hover {
+  background-color: #1e3a8a;
+  transform: translateY(-1px);
+}
+
+.book-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  form#appointment-form {
+    padding: 25px;
+  }
+
+  #patient-details,
+  #doctor-list {
+    padding: 15px;
+  }
+
+  .doctor-option {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

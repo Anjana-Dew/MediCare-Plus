@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Home | MediCare Plus</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="styles/userHome.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:
+ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,
+300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-tabs"> 
+              <a id="discover-btn">Discover MediCare Plus</a>
+            </div>
+            <div class="nav-tabs ">
+              <a id="find-btn">Find Hospital</a>
+            </div>
+            <div class="nav-tabs">
+                <a href="userHome.html" class="logo-container">
+                <img class="logo "src="img/Logo1.png" alt="Logo">
+            </a>
+            </div>
+            <div class="nav-tabs">
+              <a href="php/logout.php">Log Out</a>
+            </div>
+            <div class=" phone "> 
+              <a id="contact-btn"><img class="phone-icon" src="img/phone.png" alt="phone-Icon"></a>
+            </div>
+            <div class="search">
+              <a href="doctors.html#doctor-search-section"><img class="search-icon" src="img/search.png" alt="search-icon"></a>
+            </div> 
+        </nav>
+    </header>
+    <div class="banner-container">
+        <section class="hero-section">
+          <div class="hero-content">
+            <p class="fade-in-1">Hello, <strong id="username-display"></strong> 👋</p>
+            <p class="fade-in-2">Welcome to <strong>MediCare Plus</strong></p>
+            <p class="fade-in-3">Where compassion meets technology</p>
+            <h1 class="slide-up">Your Health, Our Priority</h1>
+        </div>
+      </section>
+        <section id="discover-section" class="info-section">
+            <h2>About MediCare Plus</h2>
+            <p>Founded in 2005 by Dr. Arjun Adheera, MediCare Plus was created to redefine healthcare 
+                in Sri Lanka through innovation, compassion, and excellence. What began as a small practice has grown into one
+                of the nation's most trusted healthcare networks.</p>
+            <p>At MediCare Plus, we focus on building trust, restoring hope, and empowering healthier 
+                lives with modern facilities, advanced technology, and skilled professionals delivering personalized, world-class care.</p>
+            <h3>Our Vision</h3> 
+            <p>To be Sri Lanka's most trusted and innovative healthcare network, recognized for medical excellence, compassionate service, and community well-being.</p>
+            <h3>Our Mission</h3> 
+            <p>To provide high-quality, accessible, and compassionate healthcare through advanced medical expertise and modern facilities.</p><br>
+            <p>We are dedicated to:</p>
+            <ul>
+                <li>Promoting health and wellness in every community we serve.</li>
+                <li>Empowering patients through education and preventive care.</li>
+                <li>Upholding integrity, empathy, and professionalism in all we do.</li>
+            </ul>  
+        </section>
+
+        <section id="find-section" class="info-section">
+            <h2>Our Hospital Locations</h2>
+            <p>📍 Colombo Main Hospital<br>📍 Kandy Branch<br>📍 Galle Medical Centre<br>📍 Jaffna Clinic</p>
+        </section>
+
+        <section id="contact-section" class="info-section">
+            <h2>Contact Us</h2>
+            <p>☎️ Hotline: +94 11 234 5678<br>📧 Email: info@medicareplus.lk<br>🏥 Address: 123 MediCare Avenue, Colombo</p>
+        </section>
+    </div>
+    <main>
+        <section class="services">
+            <div class="service-buttons">
+                <a href="book-appointment.html"  class="service-btn appointment">Book Appointment</a>
+                <a href="checkup.html" class="service-btn checkup">Book Checkup</a>
+                <a href="doctors.html" class="service-btn doctors">See Doctor Profiles</a>
+            </div>
+        </section>
+        <section class="medical-services">
+            <h2>Our Medical Services</h2>
+            <div class="service-preview">
+                <a class="med-btn active" 
+                    data-title="Cardiology" 
+                    data-content="Cardiology focuses on the diagnosis and treatment of heart-related conditions, including heart attacks, 
+                    arrhythmias, and hypertension. Our expert cardiologists use advanced technology to provide 
+                    comprehensive cardiac care and preventive guidance."
+                    data-img ="img/cardiology.png"
+                    >
+                    Cardiology
+                </a>
+                <a class="med-btn" 
+                    data-title="Neurology" 
+                    data-content="Neurology deals with disorders of the nervous system, including stroke, epilepsy, 
+                    and multiple sclerosis. Our neurologists provide expert diagnosis, treatment, and rehabilitation plans."
+                    data-img ="img/neurology.png"
+                    >
+                    Neurology
+                </a>
+                <a class="med-btn" 
+                    data-title="Oncology" 
+                    data-content="Oncology specializes in cancer care, including diagnosis, chemotherapy, 
+                    radiotherapy, and personalized treatment plans. Our oncologists work with a multidisciplinary team to provide advanced cancer management."
+                    data-img ="img/oncology.png"
+                    >
+                    Oncology
+                    
+                </a>
+                <a class="med-btn" 
+                    data-title="Orthopedics" 
+                    data-content="Orthopedics focuses on musculoskeletal system issues, including fractures, 
+                    joint replacement, and sports injuries. Our orthopedic specialists ensure optimal recovery and mobility."
+                    data-img ="img/orthopedic.png">
+                    Orthopedics
+                </a>
+                <a href="services.html"class="see-more"><img class="seeMore-icon" src="img/arrow.png" alt="arrow"></a>
+            </div>
+            <div class="service-details">
+             <div class="service-text">   
+                <h3 class="service-title">Cardiology</h3>
+                <p class="service-description"></p>
+             </div>   
+                <img class="service-image" src="" alt="" style="display:none;">
+            </div>
+        </section>
+    </main>
+    <section class="online-services">
+        <h2 class="legend-title">Our Online Services</h2> 
+        <div class="service-box">
+            <a href="doctors.html#doctor-search-section">
+                <img class="service-img" src="img/docSearch.png" alt="search doctor icon" >
+                Search Doctors
+            </a>
+            <a href="registration.html">
+                <img class="service-img" src="img/registration.png" alt="Registration icon" >
+                Online Patient Registration
+            </a>
+            <a href="patientReport.html">
+                <img class="service-img" src="img/medicalReport.png" alt="Medical report icon" >
+                Medical Report Access
+            </a>
+            <a href="patientSchedules.html">
+                <img class="service-img" src="img/appointment_schedules.png" alt="Health Tips icon" >
+                View Appointments
+            </a>
+            <a href="message.html">
+                <img class="service-img" src="img/message.png" alt="Message icon" >
+                Message with Doctors
+            </a>
+            <a href="feedback.html">
+                <img class="service-img" src="img/feedback.png" alt="Feedback icon" >
+                Feedback & Ratings
+            </a>
+            <a href="healthBlog.html">
+                <img class="service-img" src="img/healthTips.png" alt="Health Tips icon" >
+                Health Tips
+            </a>
+        </div>   
+    </section>
+    <section class="about">
+        <h2 class="about-h2">MediCare Plus Hospital - Where Care Meets Innovation</h2>
+        <p class="about-p">Established in 2005 by Dr. Arjun Adheera, MediCare Plus Hospital has been redefining healthcare through excellence, 
+            compassion, and innovation. With state-of-the-art medical technology, expert professionals,
+            and a patient-first approach, MediCare Plus stands as a trusted name in advanced healthcare and holistic wellness.</p>
+        <div class="about-box">
+          <div class="about-details">
+            <img class="about-img" src="img/hospital.png" alt="hospital icon">
+            <div>
+              <h3 class="h3-about">12+ Hospitals</h3>
+              <p class="p-about">Delivering Comprehensive and Advanced Healthcare Across the Nation.</p>
+            </div>
+          </div>
+
+          <div class="about-details">
+            <img class="about-img" src="img/doctors.png" alt="doctors icon">
+            <div>
+              <h3 class="h3-about">200+ Doctors</h3>
+              <p class="p-about">Highly Skilled Specialists Committed to Excellence and Compassionate Care.</p>
+            </div>
+          </div>
+
+          <div class="about-details">
+            <img class="about-img" src="img/Diagnostic.png" alt="diagnostic icon">
+            <div>
+              <h3 class="h3-about">20+ Diagnostic Centers</h3>
+              <p class="p-about">Accurate and Reliable Diagnostics Empowering Timely and Effective Treatment.</p>
+            </div>
+          </div>
+
+          <div class="about-details">
+            <img class="about-img" src="img/clinic.png" alt="clinic icon">
+            <div>
+              <h3 class="h3-about">50+ Clinics</h3>
+              <p class="p-about">Extending Personalized Healthcare to Communities Nationwide.</p>
+            </div>
+          </div>
+
+          <div class="about-details">
+            <img class="about-img" src="img/pins.png" alt="pins icon">
+            <div>
+              <h3 class="h3-about">1,000+ Pincodes</h3>
+              <p class="p-about">Expanding Quality Medical Services Across Sri Lanka's Urban and Rural Landscapes.</p>
+            </div>
+          </div>
+
+          <div class="about-details">
+            <img class="about-img" src="img/pharmacy.png" alt="pharmacy icon">
+            <div>
+              <h3 class="h3-about">1,500+ Pharmacies</h3>
+              <p class="p-about">Ensuring Accessible, Safe, and Affordable Medications for Every Patient.</p>
+            </div>
+            </div>
+          </div>   
+    </section>
+    <section class="testimonials">
+        <h2 class="testimonial-title">What Our Patients Say</h2>
+        <div class="testimonial-slider">
+
+          <div class="testimonial-item"> 
+            <img src="img/patient1.jpg" alt="Patient testimonial" class="testimonial-img">
+            <div class="testimonial-content"> 
+                <blockquote>“The doctors were caring and professional. I felt safe and valued.”</blockquote>
+                <cite>- Sanduni Jayawardena</cite>
+            </div>
+          </div>
+          <div class="testimonial-item reverse">
+            <div class="testimonial-content">
+                <blockquote>“Exceptional service from start to finish. The staff truly go above and beyond to make you comfortable.”</blockquote>
+                <cite>- Ravi Perera</cite>
+            </div>
+            <img src="img/patient2.jpg" alt="Patient testimonial" class="testimonial-img">
+          </div>
+          <div class="testimonial-item">
+            <img src="img/patient3.png" alt="Patient testimonial" class="testimonial-img">
+            <div class="testimonial-content">
+                <blockquote>“I received excellent treatment and the facilities were top-notch. Highly recommend this clinic!”</blockquote>
+                <cite>- Dilini Fernando</cite>
+            </div>
+          </div>
+
+          <div class="testimonial-item reverse">
+            <div class="testimonial-content">
+                <blockquote>“From the moment I walked in, I was treated with kindness and respect. They really care about their patients.”</blockquote>
+                <cite>- Nuwan Abeysekara</cite>
+            </div>
+            <img src="img/patient4.png" alt="Patient testimonial" class="testimonial-img">
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>MediCare Plus</h3>
+          <p>Delivering trusted healthcare through compassion, innovation, and excellence — empowering healthier lives across Sri Lanka.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="discover.html">About Us</a></li>
+            <li><a href="findHospitals.html">Find Hospitals</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contactUs.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i class="fa fa-phone"></i> +94 11 234 5678</p>
+          <p><i class="fa fa-envelope"></i> info@medicareplus.lk</p>
+          <p><i class="fa fa-map-marker"></i> 45 Main Street, Colombo, Sri Lanka</p>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 MediCare Plus Hospital. All Rights Reserved.</p>
+      </div>
+    </footer>
+ 
+  <script src="script/homeScript.js"></script>
+  <script src="script/session.js"></script> 
+</body>
+</html>

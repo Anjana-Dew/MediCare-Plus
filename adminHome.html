@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediCare Plus | Admin Dashboard</title>
+  <link rel="stylesheet" href="styles/adminHome.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:
+    ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,
+    300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>MediCare Plus - Admin Dashboard</h1>
+    <p id="adminName"></p>
+  </header>
+
+  <nav class="sidebar">
+    <button onclick="showSection('dashboard')">Dashboard</button>
+    <button onclick="showSection('addDoctor')">Add Doctor</button>
+    <button onclick="showSection('viewDoctors')">View Doctors</button>
+    <button onclick="showSection('viewPatients')">View Patients</button>
+    <button onclick="showSection('viewReports')">View Reports</button>
+    <button onclick="logout()">Logout</button>
+  </nav>
+
+  <main>
+    <!-- DASHBOARD SECTION -->
+    <section id="dashboard" class="content-section active">
+      <h2>Dashboard Overview</h2>
+      <div id="dashboard-stats" class="stats-grid">
+      </div>
+    </section>
+
+    <!-- Add Doctor Section -->
+    <section id="addDoctor" class="content-section ">
+      <h2>Add Doctor</h2>
+      <form id="addDoctorForm">
+        <input type="text" id="full_name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="text" id="specialization" placeholder="Specialization">
+        <input type="text" id="qualification" placeholder="Qualification">
+        <input type="number" id="experience" placeholder="Experience (years)">
+        <input type="number" id="consultation_fee" placeholder="Consultation Fee (Rs)">
+        <input type="text" id="availability" placeholder="Availability">
+        <button type="submit" class="btn-primary">Add Doctor</button>
+      </form>
+    </section>
+
+    <!-- View Doctors -->
+    <section id="viewDoctors" class="content-section">
+      <h2>All Doctors</h2>
+      <table id="doctorsTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Specialization</th>
+            <th>Email</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- View Patients -->
+    <section id="viewPatients" class="content-section">
+      <h2>All Patients</h2>
+      <table id="patientsTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Gender</th>
+            <th>Contact</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- View Reports -->
+    <section id="viewReports" class="content-section">
+      <h2>Uploaded Reports</h2>
+      <table id="reportsTable">
+        <thead>
+          <tr>
+            <th>Report ID</th>
+            <th>Patient</th>
+            <th>Doctor</th>
+            <th>Title</th>
+            <th>Date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script/adminHome.js"></script>
+</body>
+</html>

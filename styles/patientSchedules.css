@@ -1,0 +1,147 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f6f9ff;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.hero-section {
+  position: relative;
+  background: linear-gradient(to right, #2563eb, #1e40af)/*(to right, #007bff, #0097e6)*/; 
+  color: white;
+  text-align: center;
+  padding: 12rem 2rem 8rem; 
+  overflow: hidden; 
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  /*box-shadow: 0 4px 15px rgba(0,0,0,0.1);*/
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fadeSlideIn 1.2s ease forwards;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  line-height: 1.6;
+  opacity: 0;
+  animation: fadeSlideIn 1.2s ease forwards;
+  animation-delay: 0.8s;
+}
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatShape {
+  from { transform: translateY(0); }
+  to { transform: translateY(30px); }
+}
+.hero-content * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.appointments-section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.appointment-list {
+  margin-bottom: 50px;
+}
+
+.appointment-list h2 {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.appointments-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.appointment-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.appointment-card:hover {
+  transform: translateY(-3px);
+}
+
+.appointment-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.appointment-card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 500;
+}
+
+.status-Pending { background: #f39c12; }
+.status-Confirmed { background: #28a745; }
+.status-Completed { background: #3498db; }
+.status-Cancelled { background: #e74c3c; }
+
+/*.footer {
+  background: linear-gradient(to right, #007bff, #0097e6);
+}*/
+
+.cancel-btn {
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.cancel-btn:hover {
+  background: #c9302c;
+}
+.status-badge.cancelled {
+  background-color: #ccc;
+  color: #666;
+}

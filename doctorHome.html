@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor Dashboard | MediCare+</title>
+  <link rel="stylesheet" href="styles/doctorHome.css" />
+</head>
+<body>
+  <div class="doctor-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>MediCare+</h2>
+      <ul>
+        <li class="active" onclick="showSection('dashboard')">🏠 Dashboard</li>
+        <li onclick="showSection('appointments')">📅 Appointments</li>
+        <li onclick="showSection('upload')">📄 Upload Report</li>
+        <li onclick="showSection('feedback')">💬 Feedback</li>
+        <li onclick="showSection('messages')">💌  Messages</li>
+      </ul>
+      <a class="logout-btn" href="php/logout.php">Log Out</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header>
+        <h1 id="section-title">Doctor Dashboard</h1>
+        <div class="doctor-info">
+          <span id="doctor-name"></span>
+          <span class="role">Doctor</span>
+        </div>
+      </header>
+
+      <section id="dashboard" class="content-section active">
+        <h2>Welcome, Doctor 👨‍⚕️</h2>
+        <p>Here you can manage appointments, upload patient reports, and view feedback.</p>
+
+        <div class="stats">
+          <div class="stat-card">
+            <h3>🩺 Appointments Today</h3>
+            <p id="appointments-today">12</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>👥 Total Patients</h3>
+            <p id="total-patients">48</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>💬 New Feedback</h3>
+            <p id="new-feedback">5</p>
+          </div>
+        </div>
+
+        <h3> Today's Appointments</h3>
+        <ul class="appointment-list">
+          <li><strong>10:00 AM</strong> — John Smith</li>
+          <li><strong>11:30 AM</strong> — Sarah Brown</li>
+        </ul>
+
+        <h3>Recent Feedback</h3>
+        <div class="feedback-preview">
+          <p>"Doctor was really kind and helpful."</p>
+          <span>- Anna P.</span>
+        </div>
+
+        <div class="quick-actions">
+          <button onclick="showSection('appointments')">Appointments</button>
+          <button onclick="showSection('upload')">Upload Report</button>
+          <button onclick="showSection('feedback')">Feedback</button>
+        </div>
+      </section>
+
+      <section id="appointments" class="content-section">
+        <h2>Appointments</h2>
+        <p>View all your upcoming patient appointments here.</p>
+        <div class="placeholder-box">[Appointments list will appear here]</div>
+      </section>
+
+      <section id="upload" class="content-section">
+        <h2>Upload Patient Report</h2>
+        <form id="uploadForm" >
+          <label for="patientName">Select Patient:</label>
+          <select id="patientName">
+            <option>Select...</option>
+            </select>
+
+          <label for="reportTitle">Report Title:</label>
+          <input type="text" id="reportTitle" placeholder="Enter report title" />
+
+          <label for="reportFile">Choose File (PDF):</label>
+          <input type="file" id="reportFile" accept=".pdf" />
+
+          <button type="submit" class="upload-btn">Upload</button>
+        </form>
+      </section>
+
+      <section id="feedback" class="content-section">
+        <h2>Patient Feedback</h2>
+        <div id="feedbackContainer" class="feedback-container">
+          <p>Loading feedback...</p>
+        </div>
+      </section>
+
+      <section id="messages" class="content-section">
+        <h2>Pateint Messages (Anonymous)</h2>
+        <div class="message-layout">
+          <div class="chat-list" id="chatList">
+
+          </div>
+          <div class="chat-window">
+            <div class="chat-header">
+              Anonymous Chat
+            </div>
+            <div class="chat-body" id="chatBody"></div>
+            <div class="chat-input">
+              <input type="text" id="replyInput" placeholder="Type a reply..."/>
+              <button onclick="sendReply()">Send</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script/doctorHome.js"></script>
+  <script src="script/session.js"></script>
+  <script src="script/doctorMessages.js"></script>
+  <script src="script/doctorAppointments.js"></script>
+  <script src="script/doctorFeedback.js"></script>
+  <script src="script/doctorDashboard.js"></script>
+</body>
+</html>

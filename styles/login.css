@@ -1,0 +1,107 @@
+ body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #007bff, #5ac8fa);
+    }
+
+    .container {
+      background: white;
+      width: 380px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      overflow: hidden;
+      animation: fadeIn 0.4s ease;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 2px solid #007bff;
+    }
+
+    .tab {
+      flex: 1;
+      text-align: center;
+      padding: 15px 0;
+      cursor: pointer;
+      font-weight: 600;
+      color: #007bff;
+    }
+
+    .tab.active {
+      background: #007bff;
+      color: white;
+    }
+
+    form {
+      display: none;
+      padding: 25px;
+    }
+
+    form.active {
+      display: block;
+    }
+
+    h2 {
+      text-align: center;
+      color: #007bff;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: scale(0.9);}
+      to {opacity: 1; transform: scale(1);}
+    }
+
+    .back-home {
+      display: inline-block;
+      text-align: center;
+      margin: 20px auto;
+      padding: 10px 20px;
+      color: #007bff;
+      background: white;
+      border: 2px solid #007bff;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 123, 255, 0.15);
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    } 
+
+    .back-home:hover {
+      background: #007bff;
+      color: white;
+      transform: translateX(-50%) translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+   }

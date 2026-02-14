@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Appointments | MediCare+</title>
+  <link rel="stylesheet" href="styles/headerNfooter.css">
+  <link rel="stylesheet" href="styles/patientSchedules.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+        <nav class="nav">
+            <div class="nav-tabs"> 
+                <a href="discover.html" id="discover-btn">Discover MediCare Plus</a>
+            </div>
+            <div class="nav-tabs ">
+                <a href="findHospitals.html" id="find-btn">Find Hospital</a>
+            </div>
+            <div class="nav-tabs">
+                <a href="homepage.html" class="logo-container">
+                    <img class="logo "src="img/Logo1.png" alt="Logo">
+                </a>
+            </div>
+            <div class="nav-tabs"><a>Login</a></div>
+            <div class=" phone "> 
+                <a href="contactUs.html"id="contact-btn"><img class="phone-icon" src="img/phone.png" alt="phone-Icon"></a>
+            </div>
+            <div class="search">
+                <a href="#doctor-search-section"><img class="search-icon" src="img/search.png" alt="search-icon"></a>
+            </div>
+            </nav>    
+        </header>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Your Doctor Appointments</h1>
+                <p>View your upcoming and past appointments conveniently.</p>
+            </div>
+        </section>
+
+  <section id="appointments-section" class="appointments-section">
+    <div class="appointments-container">
+      <div class="appointment-list" id="upcoming-appointments">
+        <h2>Upcoming Appointments</h2>
+        <div class="appointments-grid" id="upcoming-container"></div>
+      </div>
+
+      <div class="appointment-list" id="past-appointments">
+        <h2>Past Appointments</h2>
+        <div class="appointments-grid" id="past-container"></div>
+      </div>
+    </div>
+  </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>MediCare Plus</h3>
+                <p>Delivering trusted healthcare through compassion, innovation, and excellence — empowering healthier lives across Sri Lanka.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="discover.html">About Us</a></li>
+                    <li><a href="findHospitals.html">Find Hospitals</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contactUs.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fa fa-phone"></i> +94 11 234 5678</p>
+                <p><i class="fa fa-envelope"></i> info@medicareplus.lk</p>
+                <p><i class="fa fa-map-marker"></i> 45 Main Street, Colombo, Sri Lanka</p>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MediCare Plus Hospital. All Rights Reserved.</p>
+        </div>
+    </footer>
+  <script src="script/header.js"></script>
+  <script src="script/session.js"></script>
+  <script src="script/patientSchedules.js"></script>
+</body>
+</html>

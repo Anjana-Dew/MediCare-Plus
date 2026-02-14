@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback & Ratings | MediCare+</title>
+  <link rel="stylesheet" href="styles/feedback.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="feedback-container">
+    <button class="back-btn" id="backBtn"> Back to Home</button>
+
+    <h2>Give Feedback & Rating</h2>
+    <form id="feedbackForm">
+      <label for="doctor">Select Doctor:</label>
+      <select id="doctor" name="doctor_id" required>
+        <option value="">-- Choose Doctor --</option>
+      </select>
+
+      <label for="rating">Rating:</label>
+      <div class="star-rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+      </div>
+
+      <label for="comment">Your Feedback:</label>
+      <textarea id="comment" name="comment" rows="4" placeholder="Write your feedback here..." required></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+
+    <p id="msg"></p>
+  </div>
+  
+  
+  <script src="script/session.js"></script>
+  <script src="script/feedback.js"></script>
+</body>
+</html>

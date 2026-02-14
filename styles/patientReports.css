@@ -1,0 +1,108 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.hero-section {
+  position: relative;
+  background: linear-gradient(to right, #2563eb, #1e40af); 
+  color: white;
+  text-align: center;
+  padding: 12rem 2rem 8rem; 
+  overflow: hidden; 
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  /*box-shadow: 0 4px 15px rgba(0,0,0,0.1);*/
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fadeSlideIn 1.2s ease forwards;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  line-height: 1.6;
+  opacity: 0;
+  animation: fadeSlideIn 1.2s ease forwards;
+  animation-delay: 0.8s;
+}
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatShape {
+  from { transform: translateY(0); }
+  to { transform: translateY(30px); }
+}
+.hero-content * {
+  position: relative;
+  z-index: 1;
+}
+.reports-container {
+  margin: 2rem auto;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 15px;
+}
+
+th {
+  background-color: #e3f2fd;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+button {
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #004c99;
+}

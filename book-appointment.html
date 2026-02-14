@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment | MediCare+</title>
+  <link rel="stylesheet" href="styles/book-appointment.css">
+  <link rel="stylesheet" href="styles/headerNfooter.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:
+  ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,
+  300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+    <header>
+         <nav class="nav">
+            <div class="nav-tabs"> 
+                <a href="discover.html" id="discover-btn">Discover MediCare Plus</a>
+            </div>
+            <div class="nav-tabs ">
+                <a href="findHospitals.html" id="find-btn">Find Hospital</a>
+            </div>
+            <div class="nav-tabs">
+                <a href="homepage.html" class="logo-container">
+                <img class="logo "src="img/Logo1.png" alt="Logo">
+                </a>
+            </div>
+            <div class="nav-tabs"><a>Login</a></div>
+            <div class=" phone "> 
+                <a href="contactUs.html"id="contact-btn"><img class="phone-icon" src="img/phone.png" alt="phone-Icon"></a>
+            </div>
+            <div class="search">
+                <a href="doctors.html#doctor-search-section"><img class="search-icon" src="img/search.png" alt="search-icon"></a>
+            </div>
+            
+    </header>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Book Your Appointment</h1>
+            <p>Find the right doctor, choose your preferred time, and confirm your visit — all online.</p>
+        </div>
+    </section>
+    <form id="appointment-form" method="POST" action="php/bookAppointment.php">
+        <h2>Book Appointment</h2>
+
+  <!-- Patient Info -->
+        <div id="patient-details">
+            <h3>Your Details</h3>
+            <p><strong>Name:</strong> <span id="patient-name"></span></p>
+            <p><strong>Email:</strong> <span id="patient-email"></span></p>
+            <p><strong>Phone:</strong> <span id="patient-phone"></span></p>
+         </div>
+
+  <!-- Filter Section -->
+        <div class="filter-section">
+            <label for="department">Select Medical Service:</label>
+            <select id="department" name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="Cardiology">Cardiology</option>
+                <option value="Oncology">Oncology</option>
+                <option value="Neurology">Neurology</option>
+                <option value="Orthopedics">Orthopedics</option>
+                <option value="Pediatrics">Pediatrics</option>
+                <option value="Pediatrics">Genaral Surgery</option>
+                <option value="Pediatrics">Urology</option>
+                <option value="Pediatrics">Radiology & Imaging</option>
+                <option value="Pediatrics">Gastroenterology</option>
+                <option value="Pediatrics">Dental & Oral Care</option>
+                <option value="Pediatrics">Obstetrics & Gynecology</option>
+                <option value="Pediatrics">Dermatology</option>
+            </select>
+        </div>
+
+  <!-- Doctor Selection -->
+        <div id="doctor-list">
+            <h3>Select a Doctor</h3>
+            <p class="note">Select a department to view available doctors.</p>
+        </div>
+
+        <!-- Appointment Date -->
+        <div class="form-group">
+            <label for="appointment_date">Select Date:</label>
+            <input type="date" id="appointment_date" name="appointment_date" required>
+        </div>
+
+        <!-- Appointment Time -->
+        <div class="form-group">
+            <label for="appointment_time">Select Time:</label>
+            <input type="time" id="appointment_time" name="appointment_time" required>
+        </div>
+        <button type="submit" class="book-btn">Book Appointment</button>
+    </form>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>MediCare Plus</h3>
+          <p>Delivering trusted healthcare through compassion, innovation, and excellence — empowering healthier lives across Sri Lanka.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="discover.html">About Us</a></li>
+            <li><a href="findHospitals.html">Find Hospitals</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contactUs.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i class="fa fa-phone"></i> +94 11 234 5678</p>
+          <p><i class="fa fa-envelope"></i> info@medicareplus.lk</p>
+          <p><i class="fa fa-map-marker"></i> 45 Main Street, Colombo, Sri Lanka</p>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 MediCare Plus Hospital. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="script/header.js"></script>
+    <script src="script/session.js"></script>
+    <script src="script/bookAppointment.js"></script>
+</body>
+</html>
